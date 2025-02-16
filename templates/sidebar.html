@@ -1,0 +1,24 @@
+<aside class="sidebar">
+    <div class="logo">
+      <img
+        src="{{ url_for('static', filename='images/logo.png') }}"
+        alt="Logo"
+      />
+    </div>
+    <ul class="menu">
+      <li>
+        <a href="{{ url_for('dashboard') }}">Dashboard</a>
+      </li>
+      <li>
+        <a href="{{ url_for('studygroups') }}" class="active"
+          >Study Groups</a
+        >
+      </li>
+      <li>
+        <a href="{{ url_for('discussionforums') }}">Discussion Forums</a>
+      </li>
+      <li><a href="{{ url_for('aitools') }}">AI Tools</a></li>
+      <li><a href="{{ url_for('studysessions') }}">Study Sessions</a></li>
+      <li><a href="#">Profile</a></li>
+    </ul>
+  </aside>
